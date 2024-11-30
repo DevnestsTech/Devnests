@@ -24691,7 +24691,9 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   line-height: normal;
   text-transform: uppercase;
 }
-
+.small-text-1{
+  font-size: 14px !important;
+}
 .progress-ciurcle-wrapper-one {
   display: flex;
   align-items: center;
