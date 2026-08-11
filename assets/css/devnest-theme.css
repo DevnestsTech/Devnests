@@ -1,0 +1,66 @@
+/* Devnest 2026 refresh — accent layer on top of the base template.
+   Loaded after style.css; only adds an accent color and a few
+   polish touches, the underlying grid/layout is untouched. */
+
+:root {
+  --color-accent: #34D399;
+  --color-accent-ink: #063d2a;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+
+/* eyebrow labels ("Our Approach", "Our Services", ...) */
+.pre-title {
+  color: var(--color-accent) !important;
+}
+
+/* bordered pill badges above section headings */
+.sub-title {
+  color: var(--color-accent-ink);
+  border-color: var(--color-accent);
+  background: rgba(52, 211, 153, 0.12);
+}
+
+/* hero underline word ("Creative Digital") */
+.banner-one-wrapper .title .border-bottom-1 {
+  color: var(--color-accent);
+}
+
+/* skill / stat progress bars */
+.single-progress-area-one .progress .progress-bar {
+  background: var(--color-accent);
+}
+
+/* circular "Explore Our Services" hover button */
+.rts-mouse-move-button .rts-btn-mouse-move span {
+  background-color: var(--color-accent);
+}
+.rts-mouse-move-button .rts-btn-mouse-move:hover {
+  color: var(--color-accent-ink);
+  border-color: var(--color-accent) !important;
+}
+.rts-mouse-move-button .rts-btn-mouse-move:hover i {
+  color: var(--color-accent-ink);
+}
+
+/* offcanvas menu social icons */
+.rts-fs--contacts .contact-inner .contact-information .rts-social-area-one a:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.rts-fs--contacts .contact-inner .contact-information .rts-social-area-one a:hover i {
+  color: var(--color-accent-ink);
+}
+
+/* body link hover */
+a:hover {
+  color: var(--color-accent);
+}
+
+/* scrollbar accent */
+body::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+}
